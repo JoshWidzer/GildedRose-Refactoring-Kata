@@ -22,6 +22,7 @@ namespace csharp
             GildedRose app = new GildedRose(Items);
             app.UpdateQuality();
             Assert.AreEqual("Aged Brie", Items[0].Name);
+            Assert.AreEqual(50, Items[0].Quality);
         }
     }
 }
